@@ -1,7 +1,7 @@
 import { finnhub } from "../helpers/finnhubAPI";
 
 const fetchSymbol = async (input) => {
-  const apiKey = import.meta.env.VITE_FINNHUB_API_KEY;
+  const apiKey = "cn7fgd1r01qgjtj4j2e0cn7fgd1r01qgjtj4j2eg";
   const apiRes = await fetch(`${finnhub}/search?q=${input}&token=${apiKey}`);
 
   if (!apiRes.ok) {
